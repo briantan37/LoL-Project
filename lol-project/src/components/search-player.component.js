@@ -1,11 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react'
 
-export default class SearchPlayer extends Component {
-    render() {
-        return (
-            <div>
-                <p>Search Players</p>
-            </div>
-        )
-    }
-}
+export const SearchPlayer = () => (
+    <div>
+        <h2>Search Player</h2>
+    </div>
+
+)

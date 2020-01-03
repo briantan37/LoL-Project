@@ -19,11 +19,11 @@ const Styles = styled.div`
 export const NavigationBar = () => (
     <Styles>
         <Navbar expand="lg">
-            <Navbar.Brand href="/">GG.OP</Navbar.Brand>
+            <Navbar.Brand href="">GG.OP</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Item><Nav.Link href="/search">Search Player</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link href="/">Search Player</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link href="/builds">Champions List</Nav.Link></Nav.Item>
                 </Nav>
                 <Nav className="ml-auto">

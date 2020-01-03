@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import {Layout} from './components/layout'
 
 import {NavigationBar} from "./components/navbar.component";
-import {HomePage} from "./components/home-page.component";
 import {SearchPlayer} from "./components/search-player.component";
 import {ChampionsList} from "./components/champions-list.component";
 import {LogIn} from "./components/log-in-screen"
+import {AatroxPage} from "./components/champion-pages/aatrox-page"
 import {NoMatch} from "./components/no-match.component";
 
 
@@ -17,20 +17,14 @@ class App extends Component {
     return (
       <React.Fragment>
         <NavigationBar/>
-          <Router>
-            <Switch>
-            <Route exact path="/"  component={HomePage} />
-            </Switch>   
-          </Router>
-          <Layout>
             <Router>
               <Switch>
-              <Route path="/search"  component={SearchPlayer} />
+              <Route exact path="/"  component={SearchPlayer} />
               <Route path="/builds" component={ChampionsList} />
               <Route path="/login" component={LogIn} />
+              <Route path="/Aatrox" component = {AatroxPage} />
               </Switch>   
             </Router>
-          </Layout>
       </React.Fragment>
     
     );

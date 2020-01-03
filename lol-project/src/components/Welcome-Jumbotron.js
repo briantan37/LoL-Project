@@ -4,15 +4,15 @@ import styled from 'styled-components';
 import AkaliImage from '../assets/KDA-Akali.jpg';
 
 const Styles = styled.div`
-    .jumbo{
-        background:url(${AkaliImage}) no-repeat fixed bottom;
-        background-size: cover;
-        color: #efefef;
-        height: 780px;
-        position: relative;
-        z-index: -2;
+    // .jumbo{
+    //     background:url(${AkaliImage}) no-repeat fixed bottom;
+    //     background-size: cover;
+    //     color: #efefef;
+    //     height: 780px;
+    //     position: relative;
+    //     z-index: -2;
         
-    }
+    // }
 
     .overlay {
         background-color: #000;
@@ -30,12 +30,10 @@ const Styles = styled.div`
 
 export const WelcomeJumbotron = () => (
     <Styles>
-        <Jumbo fluid className='jumbo'>
             <div className="overlay"></div>
             <Container>
                 <h1>Welcome</h1>
                 <p>Paragraph</p>
             </Container>
-        </Jumbo>
     </Styles>
 )

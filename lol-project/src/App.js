@@ -6,7 +6,7 @@ import {NavigationBar} from "./components/navbar.component";
 import {HomePage} from "./components/home-page.component";
 import {SearchPlayer} from "./components/search-player.component";
 import {ChampionsList} from "./components/champions-list.component";
-import {LogIn} from "./components/log-in-screen"
+import LoginPage from "./components/login/LoginPage.component";
 import {NoMatch} from "./components/no-match.component";
 
 
@@ -27,7 +27,7 @@ class App extends Component {
               <Switch>
               <Route path="/search"  component={SearchPlayer} />
               <Route path="/builds" component={ChampionsList} />
-              <Route path="/login" component={LogIn} />
+              <Route path="/login" component={LoginPage} />
               </Switch>   
             </Router>
           </Layout>

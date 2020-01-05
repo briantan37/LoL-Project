@@ -1,5 +1,6 @@
-import React from 'react';
-import {Jumbotron as Jumbo,Container} from 'react-bootstrap';
+import React, { Component } from 'react';
+
+import { Jumbotron as Jumbo, Container } from 'react-bootstrap';
 import styled from 'styled-components';
 import AatroxImage from '../../assets/Aatrox.jpg';
 import Aatroxstats from "../../assets/Aatrox-stats.PNG"
@@ -40,28 +41,32 @@ const Styles = styled.div`
 
 `;
 
+export default class AatroxPage extends Component {
+    render() {
+        return (
+            <Styles>
+                <Jumbo fluid className='jumbo'>
+                    <div className="overlay"></div>
+                    <Container>
+                        <h1>Aatrox</h1>
+                        <p>the Darkin Blade</p>
+                    </Container>
+                </Jumbo>
 
-export const AatroxPage = () => (
-    <Styles>
-        <Jumbo fluid className='jumbo'>
-            <div className="overlay"></div>
-            <Container>
-                <h1>Aatrox</h1>
-                <p>the Darkin Blade</p>
-            </Container>
-        </Jumbo>
-
-        <div class= "row">
-        <div><img class="image-responsive" src={Aatroxstats} style={{width:"600px", height : "500px"}}></img></div>
-        <div>
-        <div class ="items"><img class="image-responsive" src={Aatroxitems} style={{width:"1050px", height:"350px"}}></img></div>
-        <div class = "runes"><img class = "image-responsive" src={Aatroxrunes} style={{width:"1000px", height:"150px"}}></img></div>
-        </div>
-        </div>
+                <div class="row">
+                    <div><img class="image-responsive" src={Aatroxstats} style={{ width: "600px", height: "500px" }}></img></div>
+                    <div>
+                        <div class="items"><img class="image-responsive" src={Aatroxitems} style={{ width: "1050px", height: "350px" }}></img></div>
+                        <div class="runes"><img class="image-responsive" src={Aatroxrunes} style={{ width: "1000px", height: "150px" }}></img></div>
+                    </div>
+                </div>
 
 
 
-        
 
-    </Styles>
-)
+
+            </Styles>
+        );
+    }
+}
+

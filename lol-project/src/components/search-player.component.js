@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {Jumbotron as Jumbo,Container} from 'react-bootstrap';
 import styled from 'styled-components';
 import AkaliImage from '../assets/KDA-Akali.jpg';
@@ -28,19 +28,23 @@ const Styles = styled.div`
 `;
 
 
-export const SearchPlayer = () => (
-    <Styles>
-        <Jumbo fluid className='jumbo'>
-            <div className="overlay"></div>
-            <Container>
-                
-                <div class="search">
-                    <h1>Search Player</h1>
-                    <div class="form-group mb-4">
-                        <input class="form-control" type="text" placeholder="Search" aria-label="Search"></input>
+export default class SearchPlayer extends Component{
+    render(){
+        return(
+            <Styles>
+            <Jumbo fluid className='jumbo'>
+                <div className="overlay"></div>
+                <Container>
+                    
+                    <div class="search">
+                        <h1>Search Player</h1>
+                        <div class="form-group mb-4">
+                            <input class="form-control" type="text" placeholder="Search" aria-label="Search"></input>
+                        </div>
                     </div>
-                </div>
-            </Container>
-        </Jumbo>
-    </Styles>
-)
+                </Container>
+            </Jumbo>
+        </Styles>
+        );
+    }
+}

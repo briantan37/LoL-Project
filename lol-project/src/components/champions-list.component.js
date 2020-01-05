@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 import Aatrox from "../assets/icons/A/Aatrox-Icon.png"
 import Ahri from "../assets/icons/A/Ahri-Icon.png"
@@ -27,52 +27,55 @@ const Styles = styled.div`
 `;
 
 
-export const ChampionsList = () => (
-    <Styles>
-        <div class="container-fluid">
+export default class ChampionsList extends Component {
+    render() {
+        return (
+            <Styles>
+                <div class="container-fluid">
 
-            <header><h1>Choose a Champion</h1></header>
-            <div class="form-group mb-4">
-                <input class="form-control" type="text" placeholder="Search" aria-label="Search"></input>
-            </div>
-            
-
-                <div class="row">
-                    <a href="/Aatrox"><img class="img-responsive" src={Aatrox}></img></a>
-                    <a href="/Ahri"><img class="img-responsive" src={Ahri}></img></a>
-
-                    <a href="/Akali"><img class="img-responsive" src={Akali}></img></a>
+                    <header><h1>Choose a Champion</h1></header>
+                    <div class="form-group mb-4">
+                        <input class="form-control" type="text" placeholder="Search" aria-label="Search"></input>
+                    </div>
 
 
-                    <a href="/Alistar"><img class="img-responsive" src={Alistar}></img></a>
+                    <div class="row">
+                        <a href="/Aatrox"><img class="img-responsive" src={Aatrox}></img></a>
+                        <a href="/Ahri"><img class="img-responsive" src={Ahri}></img></a>
+
+                        <a href="/Akali"><img class="img-responsive" src={Akali}></img></a>
 
 
-                    <a href="/Amumu"><img class="img-responsive" src={Amumu}></img></a>
+                        <a href="/Alistar"><img class="img-responsive" src={Alistar}></img></a>
 
 
-                    <a href="/Anivia"><img class="img-responsive" src={Anivia}></img></a>
+                        <a href="/Amumu"><img class="img-responsive" src={Amumu}></img></a>
 
-                    <a href="/Annie"><img class="img-responsive" src={Annie}></img></a>
 
-                    <a href="/Aphelios"><img class="img-responsive" src={Aphelios}></img></a>
+                        <a href="/Anivia"><img class="img-responsive" src={Anivia}></img></a>
 
-                    <a href="/Ashe"><img class="img-responsive" src={Ashe}></img></a>
+                        <a href="/Annie"><img class="img-responsive" src={Annie}></img></a>
 
-                    <a href="/AurelionSol"><img class="img-responsive" src={AurelionSol}></img></a>
+                        <a href="/Aphelios"><img class="img-responsive" src={Aphelios}></img></a>
 
-                    <a href="/Azir"><img class="img-responsive" src={Azir}></img></a>
+                        <a href="/Ashe"><img class="img-responsive" src={Ashe}></img></a>
 
-                    <a href="/Bard"><img class="img-responsive" src={Bard}></img></a>
+                        <a href="/AurelionSol"><img class="img-responsive" src={AurelionSol}></img></a>
 
-                    <a href="/Blitzcrank"><img class="img-responsive" src={Blitzcrank}></img></a>
+                        <a href="/Azir"><img class="img-responsive" src={Azir}></img></a>
 
-                    <a href="/Brand"><img class="img-responsive" src={Brand}></img></a>
+                        <a href="/Bard"><img class="img-responsive" src={Bard}></img></a>
 
-                    <a href="/Braum"><img class="img-responsive" src={Braum}></img></a>
+                        <a href="/Blitzcrank"><img class="img-responsive" src={Blitzcrank}></img></a>
+
+                        <a href="/Brand"><img class="img-responsive" src={Brand}></img></a>
+
+                        <a href="/Braum"><img class="img-responsive" src={Braum}></img></a>
+                    </div>
                 </div>
-            </div>
 
-            
-    </Styles>
-)
 
+            </Styles>
+        );
+    }
+}

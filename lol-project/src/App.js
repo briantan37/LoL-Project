@@ -1,41 +1,36 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import {Layout} from './components/layout'
 
-import {NavigationBar} from "./components/navbar.component";
-import {HomePage} from "./components/home-page.component";
-import {SearchPlayer} from "./components/search-player.component";
-import {ChampionsList} from "./components/champions-list.component";
+import NavigationBar from "./components/navbar.component";
+import SearchPlayer from "./components/search-player.component";
+import ChampionsList from "./components/champions-list.component";
 import LoginPage from "./components/login/LoginPage.component";
-import {NoMatch} from "./components/no-match.component";
+import AatroxPage from "./components/champion-pages/aatrox-page"
+import NoMatch from "./components/no-match.component";
 
 
 
 
-class App extends Component {
-  render(){
+function App() {
+  
     return (
       <React.Fragment>
         <NavigationBar/>
-          <Router>
-            <Switch>
-            <Route exact path="/"  component={HomePage} />
-            </Switch>   
-          </Router>
-          <Layout>
             <Router>
               <Switch>
-              <Route path="/search"  component={SearchPlayer} />
+              <Route exact path="/"  component={SearchPlayer} />
               <Route path="/builds" component={ChampionsList} />
               <Route path="/login" component={LoginPage} />
+              <Route path="/Aatrox" component = {AatroxPage} />
+              <Route component={NoMatch}/>
               </Switch>   
             </Router>
-          </Layout>
       </React.Fragment>
     
     );
   }
   
-}
+
 
 export default App;

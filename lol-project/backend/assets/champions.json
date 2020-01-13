@@ -30,31 +30,33 @@
       "magicresistperlevel": 1.25
     },
     "abilities": {
-      "passive":{
+      "passive": {
         "name": "Deathbringer Stance"
       },
-      "q":{
+      "q": {
         "name": "The Darkin Blade"
       },
-      "w":{
+      "w": {
         "name": "Infernal Chains"
       },
-      "e":{
+      "e": {
         "name": "Umbral Dash"
       },
-      "ult":{
+      "ult": {
         "name": "World Ender"
       }
     }
   },
-
   "Ahri": {
     "id": "Ahri",
     "key": "103",
     "championName": "Ahri",
     "title": "the Nine-Tailed Fox",
     "mainRole": "Mid",
-    "tags": ["Mage", "Assassin"],
+    "tags": [
+      "Mage",
+      "Assassin"
+    ],
     "stats": {
       "hp": 526,
       "hpperlevel": 92,
@@ -76,31 +78,32 @@
       "magicresistperlevel": 0.5
     },
     "abilities": {
-      "passive":{
+      "passive": {
         "name": "Vastayan Grace"
       },
-      "q":{
+      "q": {
         "name": "Orb of Deception"
       },
-      "w":{
+      "w": {
         "name": "Fox-Fire"
       },
-      "e":{
+      "e": {
         "name": "Charm"
       },
-      "ult":{
+      "ult": {
         "name": "Spirit Rush"
       }
     }
   },
-
   "Akali": {
     "id": "Akali",
     "key": "84",
     "championName": "Akali",
     "title": "the Rogue Assassin",
     "mainRole": "Mid",
-    "tags": ["Assassin"],
+    "tags": [
+      "Assassin"
+    ],
     "stats": {
       "hp": 575,
       "hpperlevel": 95,
@@ -122,31 +125,32 @@
       "magicresistperlevel": 1.25
     },
     "abilities": {
-      "passive":{
+      "passive": {
         "name": "Assassin's Mark"
       },
-      "q":{
+      "q": {
         "name": "Five Point Strike"
       },
-      "w":{
+      "w": {
         "name": "Twilight Shroud"
       },
-      "e":{
+      "e": {
         "name": "Shuriken Flip"
       },
-      "ult":{
+      "ult": {
         "name": "Perfect Execution"
       }
     }
   },
-
   "Alistar": {
     "id": "Alistar",
     "key": "12",
     "championName": "Alistar",
     "title": "the Minotaur",
     "mainRole": "Support",
-    "tags": ["Tank"],
+    "tags": [
+      "Tank"
+    ],
     "stats": {
       "hp": 575,
       "hpperlevel": 106,
@@ -168,31 +172,33 @@
       "magicresistperlevel": 1.25
     },
     "abilities": {
-      "passive":{
+      "passive": {
         "name": "Triumphant Roar"
       },
-      "q":{
+      "q": {
         "name": "Pulverize"
       },
-      "w":{
+      "w": {
         "name": "Headbutt"
       },
-      "e":{
+      "e": {
         "name": "Trample"
       },
-      "ult":{
+      "ult": {
         "name": "Unbreakable Will"
       }
     }
   },
-
   "Amumu": {
     "id": "Amumu",
     "key": "32",
     "championName": "Amumu",
     "title": "the Sad Mummy",
     "mainRole": "Jungle",
-    "tags": ["Tank","Mage"],
+    "tags": [
+      "Tank",
+      "Mage"
+    ],
     "stats": {
       "hp": 613.12,
       "hpperlevel": 84,
@@ -214,19 +220,19 @@
       "magicresistperlevel": 1.25
     },
     "abilities": {
-      "passive":{
+      "passive": {
         "name": "Cursed Touch"
       },
-      "q":{
+      "q": {
         "name": "Bandage Toss"
       },
-      "w":{
+      "w": {
         "name": "Despair"
       },
-      "e":{
+      "e": {
         "name": "Tantrum"
       },
-      "ult":{
+      "ult": {
         "name": "Curse of the Sad Mummy"
       }
     }
@@ -237,7 +243,10 @@
     "championName": "Anivia",
     "title": "the Cryophoenix",
     "mainRole": "Mid",
-    "tags": ["Mage", "Crowd Control"],
+    "tags": [
+      "Mage",
+      "Crowd Control"
+    ],
     "stats": {
       "hp": 480,
       "hpperlevel": 82,
@@ -259,19 +268,19 @@
       "magicresistperlevel": 0.5
     },
     "abilities": {
-      "passive":{
+      "passive": {
         "name": "Rebirth"
       },
-      "q":{
+      "q": {
         "name": "Flash Frost"
       },
-      "w":{
+      "w": {
         "name": "Crystallize"
       },
-      "e":{
+      "e": {
         "name": "Frostbite"
       },
-      "ult":{
+      "ult": {
         "name": "Glacial Storm"
       }
     }
@@ -282,7 +291,11 @@
     "championName": "Annie",
     "title": "the Dark Child",
     "mainRole": "Mid",
-    "tags": ["Mage", "Support", "Crowd Control"],
+    "tags": [
+      "Mage",
+      "Support",
+      "Crowd Control"
+    ],
     "stats": {
       "hp": 524,
       "hpperlevel": 88,
@@ -304,20 +317,118 @@
       "magicresistperlevel": 0.5
     },
     "abilities": {
-      "passive":{
+      "passive": {
         "name": "Pyromania"
       },
-      "q":{
+      "q": {
         "name": "Disintegrate"
       },
-      "w":{
+      "w": {
         "name": "Incinerate"
       },
-      "e":{
+      "e": {
         "name": "Molten Shield"
       },
-      "ult":{
+      "ult": {
         "name": "Summon: Tibbers"
+      }
+    }
+  },
+  "Aphelios": {
+    "id": "Aphelios",
+    "key": "",
+    "championName": "Aphelios",
+    "title": "the Weapon of the Faithful",
+    "mainRole": "ADC",
+    "tags": [
+      "Carry",
+      "DPS",
+      "Utility"
+    ],
+    "stats": {
+      "hp": 530,
+      "hpperlevel": 86,
+      "mp": ,
+      "mpperlevel": ,
+      "attackdamage": 57,
+      "attackdamageperlevel": 2.2,
+      "attackspeed": ,
+      "attackspeedperlevel": 2.1,
+      "attackrange": ,
+      "movespeed": 330,
+      "hpregen": 3.25,
+      "hpregenperlevel": 0.55,
+      "mpregen": ,
+      "mpregenperlevel": ,
+      "armor": 28,
+      "armorperlevel": 3,
+      "magicresist": 26,
+      "magicresistperlevel": 0.5
+    },
+    "abilities": {
+      "passive": {
+        "name": "The Hitman and the Seer"
+      },
+      "q": {
+        "name": "Weapon Abilities"
+      },
+      "w": {
+        "name": "Phase"
+      },
+      "e": {
+        "name": "Weapon Queue System"
+      },
+      "ult": {
+        "name": "Moonlight Vigil"
+      }
+    }
+  },
+  "Ashe": {
+    "id": "Ashe",
+    "key": "22",
+    "championName": "Ashe",
+    "title": "the Frost Archer",
+    "mainRole": "ADC",
+    "tags": [
+      "Carry",
+      "Utility",
+      "Poke"
+    ],
+    "stats": {
+      "hp": 539,
+      "hpperlevel": 85,
+      "mp": 280,
+      "mpperlevel": 32,
+      "attackdamage": 61,
+      "attackdamageperlevel": 2.96,
+      "attackspeed": 0.658,
+      "attackspeedperlevel": 3.33,
+      "attackrange": 600,
+      "movespeed": 325,
+      "hpregen": 3.5,
+      "hpregenperlevel": 0.55,
+      "mpregen": 6.972,
+      "mpregenperlevel": 0.4,
+      "armor": 26,
+      "armorperlevel": 3.4,
+      "magicresist": 30,
+      "magicresistperlevel": 0.5
+    },
+    "abilities": {
+      "passive": {
+        "name": "Frost Shot"
+      },
+      "q": {
+        "name": "Ranger's Focus"
+      },
+      "w": {
+        "name": "Volley"
+      },
+      "e": {
+        "name": "Hawkshot"
+      },
+      "ult": {
+        "name": "Enhanced Crystal Arrow"
       }
     }
   }

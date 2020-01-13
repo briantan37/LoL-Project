@@ -16,7 +16,7 @@ const upload = multer({ storage: storage });
 
 //GET request
 router.route('/').get((req, res) => {
-    User.find()                                 //promise that returns all champions in database
+    Champion.find()                                 //promise that returns all champions in database
         .then(users => res.json(users))         //if found return json object
         .catch(err => res.status(400).json('Error: ' + err));
 });
